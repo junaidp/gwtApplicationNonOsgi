@@ -1,0 +1,76 @@
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+	
+	
+	<span class="start">Start</span>
+
+<div class="metro-surface">
+ <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-store">Store</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Xbox LIVE Games</div></td>
+   <td><div class="metro-tile metro-tile-google">Google</div></td>
+   <td><div class="metro-tile metro-tile-angrybirds">Angry Birds</div></td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-music">Music</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie">Internet</div></td>
+   <td><div class="metro-tile metro-tile-image">Images</div></td>
+   <td><div class="metro-tile metro-tile-tweet">Tweet</div></td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-msg">Messaging</div></td>
+   <td><div class="metro-tile metro-tile-player">Player</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-facebook">Facebook</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-twitter">Twitter</div></td>
+  </tr>
+ </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-aciii">Assassins Creed III</div></td>
+   <td><div class="metro-tile metro-tile-gmail">Gmail</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-dropbox">Dropbox</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-blogger">Blogger</div></td>
+  </tr>
+ </table>
+</div>
+	
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

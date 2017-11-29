@@ -1,0 +1,86 @@
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:v="urn:import:com.sapientarrow.gwtapp.client.view">
+
+	<ui:with type="com.sapientarrow.gwtapp.client.view.ApplicationConstants"
+		field="appConstants"></ui:with>
+	<ui:style>
+
+	</ui:style>
+	<g:HTMLPanel>
+		<div>
+			<g:HorizontalSplitPanel width="100%" ui:field="splitPanel">
+
+				<g:Tree ui:field='treePreferences'>
+					<g:TreeItem text='My Account' ui:field="treeItemMyAccount">
+						<g:TreeItem text='View Plan' ui:field="treeItemViewPlan"
+							HTML="View Plan" />
+						<g:TreeItem text='View Registration' ui:field="treeItemViewRegistration"
+							HTML="View Registration" />
+						<g:TreeItem text='Edit Registration' ui:field="treeItemEditRegistration"
+							HTML="Edit Registration" />
+						<g:TreeItem text='Usage' ui:field="treeItemUsage" HTML="Usage"
+							visible="false" />
+					</g:TreeItem>
+
+					<g:TreeItem text='Header'>
+						<g:TreeItem text='Logo' ui:field="treeItemLogo"
+							HTML="Logo" />
+						<g:TreeItem text='Menus' ui:field="treeItemMenus"
+							HTML="Menus" />
+					</g:TreeItem>
+
+					<g:TreeItem text='Footer' visible="false">
+
+					</g:TreeItem>
+
+					<g:TreeItem text='Main Page' ui:field="treeItemMain">
+						<g:TreeItem text='Dashboard' ui:field="treeItemDashboard"
+							HTML="Dashboard" />
+
+
+					</g:TreeItem>
+
+
+				</g:Tree>
+
+				<g:FlowPanel>
+
+				</g:FlowPanel>
+			</g:HorizontalSplitPanel>
+			<div style="padding-left:3%">
+				<g:Button styleName="button primary" ui:field="btnCancel"
+					visible="false" width="100px"> Cancel </g:Button>
+				<g:Button styleName="button primary w3-theme-l2" ui:field="btnSave" width="100px"> Save </g:Button>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

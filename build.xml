@@ -1,0 +1,88 @@
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+<project name="gwtappBuilder" default="make_war" basedir=".">
+    <description>
+        Build the gwtapp  War file
+    </description>
+
+
+    <property name="WAR.dir" location=".\war"/> 
+    <property name="WBC.JAR.dir" location="\DEV\Hg\wbc\dist"/> 
+    <property name="BUILD.dir" location="..\build"/> 
+    <property name="DIST.dir" location="..\dist"/> 
+    <property name="JAR.dir" location="D:\development\JARS"/> 
+<!--    <property name="MASTER.DIST.dir" location="D:\softwares\apache-tomcat-7.0.52\webapps"/>  -->
+	 <property name="MASTER.DIST.dir" location="C:\work\softwares\Tomcat\apache-tomcat-7.0.56\webapps"/> 
+	
+
+    <!-- =============================================================================================================  -->
+    <target name="make_war" >
+	    <echo message="making WAR " />
+        <antcall target="clean" />
+        <antcall target="make_dirs" />
+        <antcall target="copy_files" />
+        <jar destfile="${DIST.dir}/gwtapp.war" basedir="${BUILD.dir}"/>
+   	    <copy file="${DIST.dir}/gwtapp.war" tofile="${MASTER.DIST.dir}/gwtapp.war"/>
+    </target>
+
+    <!-- =============================================================================================================  -->
+    <target name="timestamp" >
+        <!-- Create the time stamp -->
+        <tstamp> 
+            <format property = "CreateDate" pattern="MMddyy" />
+            <format property = "CreateTime" pattern="HHmm" />
+        </tstamp> 
+    </target>
+
+
+    <!-- =============================================================================================================  -->
+    <target name="make_dirs" >
+	    <echo message="making DIST " />
+        <mkdir dir="${BUILD.dir}"/>
+        <mkdir dir="${DIST.dir}"/>
+    </target>
+
+    <!-- =============================================================================================================  -->
+    <target name="copy_files" >
+	    <echo message="copy war files " />
+	    <copy todir="${BUILD.dir}" >
+	        <fileset dir="${WAR.dir}"  casesensitive="false" />
+	    </copy>
+    	<!--
+   	    <copy file="${WBC.JAR.dir}/wbc.jar" tofile="${BUILD.dir}/WEB-INF/lib/wbc.jar"/>
+        <copy file="${JAR.dir}/log4j-1.2.16.jar" tofile="${BUILD.dir}/WEB-INF/lib/log4j-1.2.16.jar"/>
+        -->
+    </target>
+
+    <!-- =============================================================================================================  -->
+    <target name="clean" >
+        <delete dir="${BUILD.dir}" failonerror="true"  />                                                            
+        <delete dir="${DIST.dir}" failonerror="true"  />                                                            
+    </target>
+
+</project>

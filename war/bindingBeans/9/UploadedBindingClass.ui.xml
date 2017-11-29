@@ -1,0 +1,93 @@
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<div style="padding:5px">
+			<g:HorizontalPanel>
+				<g:Label text="Id" width="200px"  />
+				<g:ListBox visibleItemCount="1" ui:field="listIds" name="id" />
+			</g:HorizontalPanel>
+			<g:HorizontalPanel>
+				<g:Label text="Name" width="200px" />
+				<g:TextBox ui:field="textBoxName" name="name" />
+			</g:HorizontalPanel>
+			
+			
+			<g:HorizontalPanel>
+				<g:Label width="200px" > Gender : </g:Label>
+				<g:RadioButton ui:field="checkM" name="gender" text="Male"/>
+				<g:RadioButton ui:field="checkF" name="gender" text="Female"/>
+			</g:HorizontalPanel>
+			
+			<g:HorizontalPanel>
+				
+				<g:CheckBox ui:field="checkReceiveNotifications" name="notifications" text="Notifications"/>
+				
+			</g:HorizontalPanel>
+			
+			
+
+			<g:HorizontalPanel>
+				<g:Label text="User_Name" width="200px"  />
+				<g:TextBox ui:field="textBoxUser_Name" name="userEntity_name" />
+			</g:HorizontalPanel>
+			
+			<g:HorizontalPanel>
+				<g:Label text="User_Id" width="200px"  />
+				<g:TextBox ui:field="textBoxUser_Id" name="userEntity_userId" />
+			</g:HorizontalPanel>
+			
+			<g:HorizontalPanel>
+				<g:Label text="User_password" width="200px" />
+				<g:PasswordTextBox ui:field="textBoxUser_password" name="userEntity_password" />
+			</g:HorizontalPanel>
+			
+			<g:HorizontalPanel>
+				<g:Label text="User_MyAccount_myAccountId" width="200px" />
+				<g:TextBox ui:field="user_MyAccountEntity_myAccountId" name="UserEntity_MyAccountEntity_myAccountId" />
+			</g:HorizontalPanel>
+			
+			<g:HorizontalPanel>
+				<g:Label text="User_MyAccount_lastEdited" width="200px"  />
+				<d:DateBox ui:field="user_MyAccountEntity_lastEdited"  />
+			</g:HorizontalPanel>
+
+			<g:HorizontalPanel>
+				<g:Label text="Address" width="200px"  />
+				<g:TextBox width="162px" ui:field="txtAddress" name = "address"/>
+			</g:HorizontalPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+	 
+  <!-- Servlets -->
+  <!-- REST -->
+  <servlet>
+        <servlet-name>MyApplication</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>
+               com.sapientarrow.gwtapp.server
+            </param-value>
+        </init-param>
+        <init-param>
+        <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+        <param-value>true</param-value>
+        
+        
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyApplication</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+  
+  <!-- REST END -->
+  
+  
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.sapientarrow.gwtapp.server.HelloServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/helloworldgwt/greet</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <!--File upload  -->
+  
+  <context-param>
+    <!-- max size of the upload request -->
+    <param-name>maxSize</param-name>
+    <param-value>3145728</param-value>
+  </context-param>
+  <context-param>
+    <!-- max size of any uploaded file -->
+    <param-name>maxFileSize</param-name>
+    <param-value>1024000</param-value>
+  </context-param>
+  <context-param>
+    <!-- Useful in development mode to slow down the uploads in fast networks.
+         Put the number of milliseconds to sleep in each block received in the server.
+         false or 0, means don't use slow uploads  -->
+    <param-name>slowUploads</param-name>
+    <param-value>200</param-value>
+  </context-param>
+  
+   <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <servlet-class>com.sapientarrow.gwtapp.server.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>javaUploadServlet</servlet-name>
+    <servlet-class>com.sapientarrow.gwtapp.server.ComponentJavaUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>xmlUploadServlet</servlet-name>
+    <servlet-class>com.sapientarrow.gwtapp.server.ComponentXmlUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>uploadServlet</servlet-name>
+    <url-pattern>*.gupld</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>logoUploadServlet</servlet-name>
+    <servlet-class>com.sapientarrow.gwtapp.server.LogoUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logoUploadServlet</servlet-name>
+    <url-pattern>*.gupld1</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>javaUploadServlet</servlet-name>
+    <url-pattern>/javaUpload</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>xmlUploadServlet</servlet-name>
+    <url-pattern>/xmlUpload</url-pattern>
+  </servlet-mapping>
+  
+  <!-- <generate-with class="com.sapientarrow.gwtapp.server.ReflectionGenerator">
+      <when-type-assignable class="com.sapientarrow.gwtapp.client.Reflection" />
+  </generate-with>
+  -->
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>HelloWorldGWT.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

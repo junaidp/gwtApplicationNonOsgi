@@ -1,0 +1,685 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+.h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h4 { 
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+	
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.lblHeader {
+	background-color: skyblue;
+	color: white;
+	font-size: 20px;
+}
+
+.blue {
+	color: blue;
+}
+
+.greencolor {
+	color: green;
+}
+
+.redcolor {
+	color: red;
+}
+
+.blueBackground {
+	background-color: darkblue;
+	color: white;
+	font-size: 18px;
+}
+
+.blueBold {
+	color: blue;
+	font-weight: bold;
+}
+
+.form-row {
+	margin: 6px 0 0 5px;
+	padding: 5px 0 3px 0;
+	border-bottom: 1px dotted #ddd;
+}
+
+.heading {
+	width: 400px;
+	font-size: 20px;
+	margin-top: 1px;
+	margin-left: 5px;
+	margin-bottom: 1px;
+	color: #003366;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginArea {
+	margin-left: 1050px;
+	margin-top: 100px;
+	width: 400px;
+}
+
+.border {
+	width: 500px;
+	height: 250px;
+	margin-left: 25px;
+	background-color: #F0F0F0;
+}
+
+.headerSignin {
+	background-color: #003366;
+	color: white;
+	font-size: 17px;
+	font-family: Engravers MT;
+	padding: 3px;
+	height: 30px;
+}
+
+.headerSigninSmall {
+	background-color: #003366;
+	color: white;
+	font-size: 12px;
+	font-family: Engravers MT;
+	padding: 3px;
+	height: 20px;
+}
+
+.fieldsStyle {
+	margin-left: 30px;
+	padding-left: 10px;
+}
+
+.error {
+	color: red;
+}
+
+.register {
+	font-size: 10px;
+	cursor: pointer;
+	margin-top: 7px;
+	color: blue;
+	margin-left: 5px;
+	height: 10px;
+	width: 100px;
+	display: inline-block;
+	font: Times New Roman;
+}
+
+.hover {
+	cursor: pointer;
+}
+
+.btnStyle {
+	font: arial;
+	color: white;
+	padding: 3px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #bbb;
+	border-left: 1px solid #ccc;
+	line-height: 1px;
+	text-align: center;
+	background-color: #003366;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 80px;
+	height: 28px;
+}
+
+.point{
+	cursor: pointer;
+}
+
+.linkStyle {
+	font: arial;
+	color: blue;
+	margin-left: 35px;
+	margin-top: 0px;
+	padding: 3px;
+}
+
+.mainPanel {
+	padding-left: 200px;
+	width: 727px;
+}
+
+.btnStyle:hover {
+	border: 1px solid #003366;
+	cursor: pointer;
+}
+
+.btnStyle:active {
+	border: 1px solid #aaa;
+}
+
+.anchorStyle:hover {
+	font-size: 14px;
+}
+
+.register:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.linkStyle:hover {
+	text-color: blue;
+	cursor: pointer;
+}
+/** Creation client */
+.body {
+	height: 500px;
+	width: 825px;
+	margin-top: 20px;
+	margin-left: 150px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: lightsteelblue;
+	border-radius: 4px;
+	border: 1px solid gray;
+}
+
+.name {
+	width: 810px;
+	height: 30px;
+	padding-left: 3px;
+	padding-top: 3px;
+	border: 1px solid;
+	border: 1px dotted gray;
+	border-radius: 4px;
+}
+
+.inLine {
+	display: inline-block;
+	margin-left: 2px;
+}
+
+.analysis {
+	width: 300px;
+	height: 50px;
+	margin-top: 100px;
+	float: right;
+}
+
+
+
+.textBoxStyle {
+	width: 300px;
+	height: 25px;
+}
+
+TextBox {
+	width: 300px;
+	height: 25px;
+}
+
+.information {
+	width: 400px;
+	height: 160px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 1px;
+	border: 1px dotted gray;
+	position: relative;
+	border-radius: 4px;
+	color: blue;
+}
+
+.client {
+	width: 395px;
+	height: 170px;
+	float: left;
+	position: relative;
+	margin-top: 10px;
+	border: 1px dotted gray;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.principle {
+	width: 385px;
+	height: 110px;
+	float: right;
+	margin-top: 10px;
+	position: relative;
+}
+
+.listbox {
+	margin-top: 6px;
+	width: 276px;
+	background-color: #F0F0F0;
+	color: blue;
+	position: relative;
+	border-radius: 4px;
+	border: 1px solid gray;
+}
+
+.listbox1 {
+	margin-top: 6px;
+	width: 276px;
+	background-color: white;
+	color: blue;
+	position: relative;
+	border-radius: 4px;
+	border: 1px solid gray;
+}
+
+.labelsmargin {
+	margin-top: 6px;
+	text-align: right;
+	width: 110px;
+	padding-right: 8px;
+	color: blue;
+}
+
+.labeltop {
+	float: right;
+	width: 400px;
+	margin-top: -16px;
+}
+
+/** search screen  */
+.vlayout {
+	margin-left: 200px;
+}
+
+.tabset {
+	border: 1px;
+}
+
+/** search screen  */
+.vlayout {
+	margin-left: 300px;
+	margin-top: 100px
+}
+
+.tabset {
+	border: 1px;
+}
+
+.whitelayout {
+	margin-top: 50px;
+	margin-left: 10px;
+	float: left;
+}
+
+.lboxlayout {
+	margin-top: 1px;
+	margin-left: 1px;
+	float: left;
+}
+
+.btnlayout {
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+.editCell {
+	color: blue !important;
+	cursor: pointer !important;
+}
+
+.whitebg {
+	background-color: white !important;
+}
+
+
+.white {
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.bluebg {
+	background-color: #98AFC7 !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.controlPanelHeadings {
+	font-family: "Times New Roman",Times,serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.labelStyle {
+	font-family: "Times New Roman",Times,serif;
+    font-size: 14px;
+ 
+}
+
+.centerPanelHeadings {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.centeredText {
+	text-align: center;
+}
+
+.center {
+	 margin: auto;
+    padding-left: 130px;
+    padding-top: 100px;
+    width: 90%;
+
+}
+
+#centerofBrowser {
+	margin-left: auto;
+	margin-right: auto;
+}
+.browserCenter{
+	padding-left: 25%;
+	padding-top:10%;
+	padding-bottom:10%;
+}
+.browserRight{
+	padding-left: 50%;
+	padding-top:10%;
+	padding-bottom:10%;
+}
+
+.hover:HOVER {
+	color: darkblue;
+	
+}
+
+.graybackground {
+	background-color: #F5F5F5;
+}
+
+/**  METRO CSS   */
+
+body {
+	background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Background.jpg) bottom no-repeat;
+	background-color:58169a;
+}
+
+
+span.start {
+	color:white;
+	font-size:2em;
+
+}
+
+.credits {
+	color:white;
+	text-align:right;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+.metro-surface{
+	padding: 40px 0px 0px 0px;
+}
+
+
+.metro-tile {
+	background-color: #D8512B;
+	border-color: #DC6241;
+	width: 400px;
+	height: 130px;
+	padding: 5px;
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 12px;
+	border-width: 3px;
+	border-style: solid;
+	cursor: default;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+
+.metro-tile-small {
+	width: 250px;
+	height: 130px;
+}
+
+.metro-tile-dashboard {
+	background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/XBox.png);
+	background-position: 8px 8px;
+        background-color:#6CB71E;
+        border-color:#6CB71E;
+}
+
+.metro-tile-portal {
+	background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Music.png');
+        background-color: purple;
+	border-color: purple;
+}
+
+
+.metro-tile-accordion {
+	background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Twitter.png);
+	background-color: #2878EC;
+	background-position: 0 10px;
+	border-color: #2878EC;
+}
+
+
+.metro-tile-aciii {
+	background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/AC3.jpg);
+	border-color: black;
+}
+
+
+.metro-tile-dropbox {
+	background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Dropbox.png);
+	background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+div.metro-tile:hover {
+	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	border-width: 3px;
+	border-style:solid; 
+	
+	 -webkit-transition-property: top, bottom;
+        -webkit-transition-duration: 0.5s;
+}
+div.metro-tile:ACTIVE {
+    border-style: solid;
+    border-width: 3px;
+    transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(20deg);
+}
+
+
+div.metro-tile:hover > #content {
+   height: 30%;
+    width: 100%;
+}
+/** METRO CSS END*/
+
+#content {
+    width: 20px;
+    background: white;
+    height: 0;
+    transition: all 0.4s ease-in-out;
+    position: margin-top: -100px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    opacity: 0.4;
+    padding-top: 15px;
+}
+
+.slideUpPanel{
+ background-color: #87CEEB;
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+
+
+/******** + Sticky Footer including Header ********/
+
+#bodyContainer {
+    margin-bottom:50px;
+}
+
+#footerContainer {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+  /*  height:50px; */
+    margin-bottom:0px;
+}
+#footer-spacer{
+margin: 20px 20px;	
+}
+
+/*************** - Sticky Footer End ******************/
+.shadowDiv{
+ 	background-color: #FEFEFE;
+    border: 2px none;
+    box-shadow: 5px 5px 5px #888888;
+    padding-left: 20%;
+    padding-top: 50px;
+    width: 500px;
+    padding-bottom: 50px;
+}
+.userIcon{
+	background-image:url('images/user.png');
+	background-repeat:no-repeat;
+	padding-left:30px;
+}
+.passwordIcon{
+	background-image:url('images/password.png');
+	background-repeat:no-repeat;
+	padding-left:30px;
+}
+.coloredDiv{
+	background-color: #E8E8E8 ;
+    box-shadow: 2px 2px 3px #C8C8C8 ;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border:
+	
+}
+.imageButton{
+	background:url(images/close.jpg);
+background-repeat: no-repeat;
+}
+.gwt-DisclosurePanel{
+	height: 20px !important;
+	width: 20px !important;
+}
+
+.gwt-DisclosurePanel .header{
+	font-size: 20px !important;
+	width: 20px !important;
+	height: 20px !important;
+}
+
+.errorPanel{
+	  background:#ffecec url('images/error.png') no-repeat 10px 50%;
+      border:1px solid #f5aca6;
+}
+.alert-box {
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+    margin:10px;
+}
+.gwt-PopupPanel{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 solid #C3D9FF !important;
+}

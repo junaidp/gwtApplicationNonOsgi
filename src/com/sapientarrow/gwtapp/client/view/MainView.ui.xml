@@ -1,0 +1,65 @@
+<!--
+    Copyright (c) 2017  * Copyright (c) 2015 Sapient Arrow Technologies.
+    All rights reserved. This program and the accompanying materials
+    * are made available under the terms of the Affero GNU Public License
+    which accompanies this distribution, and is available at
+    https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+    Copyright:
+       Sapient Arrow Technologies llc
+     
+     This file is part of the Business Suite software of Sapient Arrowpro.net.
+     Copyright (C) 2012-2020 Sapient Arrowpro.net
+   
+     The primary contact email is support@Sapient Arrowpro.net
+   
+     Version: AGPL
+   
+     Sapient Arrow Technologies, Sapient Arrow Information Systems, Sapient Arrow along with their domain names,  
+     etc and the names Acuity, Ingenuity, Derivo, Colander etc are copyright of
+     Sapient Arrow llc and usage of these without prior permission of the owner is strictly prohibited
+      
+    The contents of this file may be used under the terms of
+     the Affero GNU General Public License Version (the "AGPL"),
+     A copy of the AGPL v2.1 can be obtained from https://en.wikipedia.org/wiki/Affero_General_Public_License
+     
+     AGPL, in essence, means that this software requires a commercial license for use in or as a commercial application
+ -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:v="urn:import:com.sapientarrow.gwtapp.client.view"
+	xmlns:C="urn:import:com.sapientarrow.gwtapp.client.dashboard.controlpanels">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<div style="padding-left:90%">
+			
+			
+			<g:DisclosurePanel ui:field="discPanel" visible="false">
+				<g:customHeader>
+				<g:Label ui:field="lblWelcome" styleName="labelStyle hover"></g:Label></g:customHeader>
+				<g:VerticalPanel ui:field="discPanelContainer">
+				<g:Anchor ui:field="ancFileUpload" styleName=" hover" wordWrap="false"> File Upload</g:Anchor>
+				<g:Anchor ui:field="ancJavaBeanEditor" styleName=" hover" wordWrap="false"> JavaBean Editor</g:Anchor>
+				<g:Anchor ui:field="ancDynamicBeanEditor" styleName=" hover" wordWrap="false"> DynBean Editor</g:Anchor>
+				<g:Anchor ui:field="ancBeanData" styleName=" hover" wordWrap="false"> Bean Data Screen</g:Anchor>
+				<g:Anchor ui:field="ancDynamicBeanData" styleName=" hover" wordWrap="false"> DynBean Data Screen</g:Anchor>
+				<g:Anchor ui:field="ancDownloadJson" styleName=" hover" wordWrap="false"> Download Json </g:Anchor>
+				<g:Anchor ui:field="ancGlobalPreferences" styleName=" hover" wordWrap="false"> Global Preferences</g:Anchor>
+				<g:Anchor ui:field="ancBindings" styleName=" hover" wordWrap="false"> Bindings </g:Anchor>
+				
+				
+				</g:VerticalPanel>
+			</g:DisclosurePanel>
+		</div>
+
+		<div style="padding:5px">
+			<C:ControlPanelsContainer ui:field="controlPanelContainer"></C:ControlPanelsContainer>
+		</div>
+		<div style="padding:5px">
+			<g:VerticalPanel ui:field="center">
+			</g:VerticalPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
